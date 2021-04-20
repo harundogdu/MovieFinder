@@ -1,7 +1,8 @@
 export const elements = {
     searchForm: document.getElementById('form-search'),
     searchInput: document.getElementById('text-keyword'),
-    searchResults: document.getElementById('results')
+    movieList: document.getElementById('movieList'),
+    movieListContainer: document.getElementById('movieListContainer'),
+    movieDetails: document.getElementById('movieDetails'),
+    movieDetailsContainer: document.getElementById('movieDetailsContainer')
 }
-
-//https://www.themoviedb.org/t/p/w220_and_h330_face/zpIWSpN7KYYtx0Z8L3fb6JOq7Tl.jpg

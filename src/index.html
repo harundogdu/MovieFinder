@@ -18,24 +18,40 @@
         </div>
     </nav>
 
-    <section>
-        <div class="container">
-            <div class="card">
-                <div class="card-body">
-                    <form action="" id="form-search" class="form">
-                        <div class="input-group">
-                            <input type="text" id="text-keyword" class="form-control">
-                            <input type="submit" value="Search" id="btn-search"
-                                class="btn btn-outline-danger input-group-append">
-                        </div>
-                    </form>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form action="" id="form-search" class="form">
+                    <div class="input-group">
+                        <input type="text" id="text-keyword" class="form-control">
+                        <input type="submit" value="Search" id="btn-search"
+                            class="btn btn-outline-danger input-group-append">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="movieDetailsContainer" class="container d-none my-2">
+        <div class="card">
+            <div class="card-body">
+                <div id="movieDetails">                
+                   
                 </div>
             </div>
-            <ul class="list-unstyled mt-3" id="results">                
-                
-            </ul>
         </div>
-    </section>
+    </div>
+
+    <div id="movieListContainer" class="container d-none my-2">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-unstyled mt-3" id="movieList">                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
