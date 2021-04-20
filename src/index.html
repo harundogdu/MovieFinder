@@ -8,7 +8,8 @@
     <meta name="Description" content="Enter your description here" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie Finder</title>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
             <div class="card-body">
                 <form action="" id="form-search" class="form">
                     <div class="input-group">
-                        <input type="text" id="text-keyword" class="form-control">
+                        <input type="text" id="text-keyword" class="form-control" placeholder="type the movie you want ...">
                         <input type="submit" value="Search" id="btn-search"
                             class="btn btn-outline-danger input-group-append">
                     </div>
@@ -35,6 +36,11 @@
 
     <div id="movieDetailsContainer" class="container d-none my-2">
         <div class="card">
+            <div class="card-header text-right">
+                <button class="btn btn-danger" id="closeMovieDetails">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
             <div class="card-body">
                 <div id="movieDetails">                
                    
@@ -45,6 +51,7 @@
 
     <div id="movieListContainer" class="container d-none my-2">
         <div class="card">
+            <div class="card-header" id="moviePreface"></div>
             <div class="card-body">
                 <ul class="list-unstyled mt-3" id="movieList">                
                 

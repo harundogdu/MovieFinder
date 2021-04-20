@@ -3,9 +3,14 @@ import {
 } from '../base';
 
 export const backToTop = () => {
-    window.scrollTo({top:0,behavior:'smooth'});
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
-
+export const closeMovieDetails = () => {
+    elements.movieDetailsContainer.classList.remove('d-block');
+}
 export const displayMovie = data => {
     console.log(data);
 
