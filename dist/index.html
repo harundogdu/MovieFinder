@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web pack example</title>
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Movie Finder</title>
 </head>
+
 <body>
-    <h1>Web pack example</h1>
+    <nav class="navbar navbar-dark bg-danger">
+        <div class="container justify-content-center">
+            <a href="" class="navbar-brand font-weight-bold">Movie Finder</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <form action="" id="form-search" class="form">
+                    <div class="input-group">
+                        <input type="text" id="text-keyword" class="form-control" placeholder="type the movie you want ...">
+                        <input type="submit" value="Search" id="btn-search"
+                            class="btn btn-outline-danger input-group-append">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="movieDetailsContainer" class="container d-none my-2">
+        <div class="card">
+            <div class="card-header text-right">
+                <button class="btn btn-danger" id="closeMovieDetails">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="card-body">
+                <div id="movieDetails">                
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="movieListContainer" class="container d-none my-2">
+        <div class="card">
+            <div class="card-header" id="moviePreface"></div>
+            <div class="card-body">
+                <ul class="list-unstyled mt-3" id="movieList">                
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bundle.js"></script></body>
+
 </html>
