@@ -7,7 +7,7 @@ export default class Search {
         this.keyword = keyword;
     }
     async getResults() {
-        const response = await fetch(`${base_url}/search/movie?api_key=${api_key}&page=1&query=${this.keyword}`);
+        const response = await fetch(`${base_url}/search/movie?api_key=${api_key}&page=1&language=en-US&query=${this.keyword}`);
         this.data = await response.json();
     }
 }
